@@ -1,0 +1,458 @@
+* {
+  margin: 0;
+  top: 0;
+  box-sizing: border-box;
+  font-family: 'Golos Text', sans-serif;
+}
+.container {
+  max-width: 1280px;
+  padding: 0 2%;
+  margin: 0 auto;
+}
+.clear {
+  clear: both;
+}
+html,
+body {
+  overflow-x: hidden;
+  background: #f2f2f2;
+}
+/**header do site**/
+header {
+  background-image: url('../images/bg2.jpg');
+  height: 450px;
+  padding: 30px 0;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+header .logo {
+  position: relative;
+  z-index: 2;
+  color: #282828;
+  font-size: 25px;
+  padding: 0px 8px;
+  margin: 5px 0;
+  background: #ffffff;
+  display: inline-block;
+}
+nav.desktop {
+  float: right;
+}
+nav.desktop ul {
+  list-style-type: none;
+}
+nav.desktop li {
+  display: inline-block;
+  margin: 5px 15px;
+}
+nav.desktop a {
+  color: #ffffff;
+  text-decoration: none;
+}
+nav.desktop li.btn-nav {
+  padding: 3px 8px;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+}
+nav.mobile {
+  display: none;
+  float: right;
+}
+nav.mobile h3 {
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 24px;
+}
+nav.mobile ul {
+  display: none;
+  background: #190061;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 70px 0 30px 0;
+  text-align: center;
+}
+nav.mobile a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+nav.mobile li {
+  padding: 10px 0;
+}
+nav.mobile li.btn-nav {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+/**sessao chamada**/
+div.chamada-header {
+  padding: 70px 0;
+}
+div.chamada-header h2 {
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: normal;
+}
+div.chamada-header p {
+  font-size: 17px;
+  color: white;
+  margin-top: 20px;
+}
+div.chamada-header form {
+  margin-top: 20px;
+}
+div.chamada-header input[type=email] {
+  display: inline-block;
+  border-radius: 20px;
+  background: white;
+  width: 230px;
+  height: 35px;
+  border: 0;
+  padding-left: 10px;
+}
+div.chamada-header input[type=email]:focus {
+  outline: 0;
+}
+div.chamada-header input[type=submit] {
+  border-radius: 20px;
+  background: #3500d3;
+  width: 150px;
+  height: 35px;
+  cursor: pointer;
+  border: 0;
+  color: white;
+}
+/**sessao descrição**/
+section.descricao {
+  text-align: center;
+  padding: 40px 0;
+}
+section.descricao p {
+  display: inline-block;
+  max-width: 700px;
+  font-weight: lighter;
+  font-size: 16px;
+  font-style: italic;
+}
+/**descricao 2**/
+section.descricao-2 {
+  padding: 30px 0;
+}
+section.descricao-2 img {
+  float: left;
+  width: 55%;
+  max-width: 450px;
+  padding-left: 50px;
+}
+section.descricao-2 > .container {
+  max-width: 960px;
+}
+.texto-descricao {
+  float: left;
+  width: 45%;
+  text-align: justify;
+}
+.texto-descricao h3 {
+  color: #240090;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: bold;
+}
+.texto-descricao p {
+  color: #190061;
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 22px;
+}
+/**descricao 3**/
+section.descricao-3 {
+  padding: 30px 0 80px 0;
+}
+section.descricao-3 > .container {
+  max-width: 1040px;
+  background-image: url('../images/bg3.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+  position: relative;
+}
+.box-depoimentos {
+  position: absolute;
+  left: 50%;
+  top: 270px;
+  width: 70%;
+  max-width: 506px;
+  background: white;
+  padding: 20px 30px;
+  -webkit-box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.75);
+}
+.box-depoimentos p {
+  font-size: 16px;
+  color: #190061;
+  font-weight: lighter;
+}
+/*servicos**/
+section.servicos {
+  padding: 40px 0;
+}
+section.servicos > .container {
+  max-width: 1100px;
+}
+.title-servicos {
+  text-align: center;
+}
+.title-servicos h3 {
+  font-size: 19px;
+  font-weight: normal;
+  color: #190061;
+}
+.flex-servicos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-servicos .space-servicos {
+  padding: 30px;
+  width: 33.3%;
+}
+.flex-servicos .box-servicos {
+  border-radius: 3px;
+  background: white;
+  background-color: #fff;
+  box-shadow: 2px 2px 25px -10px rgba(0, 0, 0, 0.57);
+  height: 100%;
+}
+.flex-servicos .box-servicos img {
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-size: contain;
+}
+.flex-servicos .box-servicos-wraper {
+  padding: 20px;
+}
+.flex-servicos .box-servicos-wraper h2 {
+  color: #3500d3;
+  font-size: 17px;
+  font-weight: bold;
+}
+.flex-servicos .box-servicos-wraper p {
+  font-weight: lighter;
+  color: #240090;
+  font-size: 13px;
+  margin: 9px 0;
+  line-height: 1.6;
+}
+.flex-servicos .box-servicos-wraper a {
+  display: inline-block;
+  border: 1px solid #190061;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: #240090;
+  font-size: 14px;
+}
+section.portfolio {
+  padding: 20px 0;
+}
+section.portfolio h2 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: normal;
+  color: #31475e;
+}
+section.portfolio > .container {
+  max-width: 960px;
+  padding: 15px 0;
+  background-color: white;
+}
+section.portfolio .empresas {
+  padding: 0 10px;
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.portfolio .empresas .empresa-single {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px 0 1px 1px;
+  width: 25%;
+  padding: 10px 0;
+}
+section.portfolio .empresas .empresa-single:last-child {
+  border: 1px solid white;
+}
+/*** formulario***/
+section.formulario {
+  padding: 40px 0;
+}
+section.formulario h2 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: normal;
+  color: #240090;
+}
+section.formulario form {
+  margin-top: 10px;
+}
+section.formulario .container {
+  max-width: 700px;
+}
+section.formulario input[type=text] {
+  width: 100%;
+  height: 40px;
+  border-radius: 100px;
+  border: 1px solid #ebebeb;
+  margin-top: 8px;
+  padding-left: 20px;
+}
+section.formulario input[type=text]:focus {
+  outline: 0;
+}
+section.formulario textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 20px;
+  border: 1px solid #ebebeb;
+  margin-top: 8px;
+  padding: 10px 20px;
+  resize: none;
+}
+section.formulario input[type=submit] {
+  width: 130px;
+  height: 35px;
+  color: white;
+  cursor: pointer;
+  border-radius: 100px;
+  border: 0;
+  background-color: #3500d3;
+  margin-top: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 25px -10px rgba(0, 0, 0, 0.57);
+}
+/***foooter***/
+footer {
+  padding: 30px 0;
+  background: #282828;
+  width: 100%;
+}
+footer .powered {
+  background-color: aliceblue;
+  color: #282828;
+  padding: 10px;
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+.box-footer {
+  float: left;
+  width: 33.3%;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+.box-footer h2 {
+  color: #b0b0b0;
+  font-size: 18px;
+  font-weight: normal;
+}
+.box-footer p {
+  margin-top: 10px;
+  color: white;
+  font-weight: lighter;
+  font-size: 13px;
+}
+.box-footer form {
+  margin-top: 10px;
+}
+.box-footer button {
+  width: calc(10%);
+  margin-left: 10px;
+  max-width: 63px;
+  height: 30px;
+  border: 1px solid #282828;
+  background: #3500d3;
+  border-radius: 50px;
+}
+.box-footer button i {
+  color: white;
+}
+.box-footer input[type=text] {
+  width: 80%;
+  padding-left: 10px;
+  max-width: 209px;
+  height: 30px;
+  border: 1px solid #b0b0b0;
+  background: #f2f2f2;
+  border-radius: 100px;
+  color: #b0b0b0;
+}
+.box-footer input[type=text]:focus {
+  outline: 0;
+}
+@media screen and (max-width: 1024px) {
+  nav.desktop {
+    display: none;
+  }
+  nav.mobile {
+    display: block;
+  }
+  div.chamada-header {
+    text-align: center;
+  }
+  div.chamada-header input[type=email] {
+    margin-bottom: 30px;
+  }
+  .box-depoimentos {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .flex-servicos .space-servicos {
+    width: 100%;
+    margin: 0 auto;
+    width: 400px;
+    padding: 10px;
+  }
+  .texto-descricao {
+    width: 100%;
+    display: block;
+    float: none;
+    text-align: justify;
+  }
+  section.descricao-2 img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    margin-top: 20px;
+    max-width: 500px;
+    padding-left: 0;
+  }
+  section.portfolio .empresas .empresa-single {
+    width: 100%;
+    max-width: 640px;
+    margin: 15px auto;
+    border: 1px solid white;
+  }
+  .box-footer {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
